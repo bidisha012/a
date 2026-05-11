@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Counselling Online Voting System</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background:linear-gradient(to right, #1e3c72, #2a5298);
+        }
+
+        .login-container{
+            background:#fff;
+            padding:40px;
+            width:350px;
+            border-radius:10px;
+            box-shadow:0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        .login-container h2{
+            text-align:center;
+            margin-bottom:25px;
+            color:#1e3c72;
+        }
+
+        .input-group{
+            margin-bottom:20px;
+        }
+
+        .input-group label{
+            display:block;
+            margin-bottom:5px;
+            font-weight:bold;
+        }
+
+        .input-group input{
+            width:100%;
+            padding:10px;
+            border:1px solid #ccc;
+            border-radius:5px;
+            outline:none;
+        }
+
+        .input-group input:focus{
+            border-color:#2a5298;
+        }
+
+        .btn{
+            width:100%;
+            padding:12px;
+            background:#1e3c72;
+            border:none;
+            color:blue;
+            font-size:16px;
+            border-radius:5px;
+            cursor:pointer;
+        }
+
+        .btn:hover{
+            background:#16325c;
+        }
+
+        .footer-text{
+            text-align:center;
+            margin-top:15px;
+            font-size:14px;
+        }
+
+        .footer-text a{
+            color:#1e3c72;
+            text-decoration:none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>Online Voting Login</h2>
+
+        <form action="login.php" method="POST">
+
+            <div class="input-group">
+                <label for="studentid">Student ID</label>
+                <input type="text" id="studentid" name="studentid" placeholder="Enter Student ID" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter Password" required>
+            </div>
+
+            <button type="submit" class="btn">Login</button>
+
+            <div class="footer-text">
+                Forgot Password? <a href="#">Reset</a>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>
